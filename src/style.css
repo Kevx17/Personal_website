@@ -1,17 +1,20 @@
 body{
-    background-color: rgb(119, 116, 116);
+    margin-top: 40px;
+    background-color: rgb(71, 69, 69);
     display: grid;
     gap: 48px;
-    height: 170vh;
+    place-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
 header{
     display: flex;
-    background-color: rgb(48, 48, 48);
+    background-color: rgba(48, 48, 48, 0.562);
     color: aliceblue;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     width: 90vw;
     justify-self: center;
+    text-shadow: 4px 4px 4px rgb(0, 0, 0);
 }
 
 nav{
@@ -28,26 +31,95 @@ nav{
     align-self: center;
 }
 
-main{
-    background-color: rgb(48, 48, 48);
+
+p{
+    margin: 0;
+}
+
+.hero{
+    text-shadow: 4px 4px 2px rgb(0, 0, 0);
+    margin: 0;
+    color: rgb(255, 243, 240);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    background-color: rgba(48, 48, 48, 0.5);
     width: 90vw;
-    height: 150vh;
+    height: 70vh;
     justify-self: center;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    display: grid;
     place-items: center;
 }
 
-#content{
-    width: 80%;
-    height: 80%;
-    border: 1px solid rgb(255, 243, 240);
-    color: rgb(255, 243, 240);
+.quote{
+    height: 100%;
     display: grid;
-    justify-content: center;
-    padding: 40px;
+    grid-template-rows: 1fr 2fr;
+    gap: 10px;
+    justify-content: left;
+    padding-left: 100px;
 }
 
-#name{
-    text-align: end;
+.quote .container{
+    display: grid;
+    align-items: end;
+}
+
+.hero img{
+    height: 65vh;
+}
+
+button{
+    width: 120px;
+    height: 28px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(157, 160, 161);
+    transition: all 0.3s ease;
+    
+}
+
+button:hover{
+    width: 120px;
+    height: 28px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(189, 196, 196);
+    transform: scale(1.1);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.247);
+}
+
+.about{
+    margin: 0;
+    color: rgb(255, 243, 240);
+    background-color: rgba(48, 48, 48, 0.5);
+    width: 90vw;
+    height: 70vh;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    text-shadow: 4px 4px 4px rgb(0, 0, 0);
+}
+
+
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card{
+    width: 24vw;
+    height: 50vh;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.582);
+    text-align: center;
+    padding: 20px;
 }
