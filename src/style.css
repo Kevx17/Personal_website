@@ -1,10 +1,51 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+
+
+
+
 body{
     margin-top: 40px;
     background-color: rgb(71, 69, 69);
     display: grid;
     gap: 48px;
     place-items: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    place-items: center;
+}
+
+main{
+    max-width: 1850px;
+    display: grid;
+    gap: 48px;
+    place-items: center;
 }
 
 header{
@@ -12,7 +53,8 @@ header{
     background-color: rgba(48, 48, 48, 0.562);
     color: aliceblue;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    width: 90vw;
+    width: 90%;
+    height: 60px;
     justify-self: center;
     text-shadow: 4px 4px 4px rgb(0, 0, 0);
 }
@@ -44,11 +86,12 @@ p{
     grid-template-columns: 1fr 1fr;
     place-items: center;
     background-color: rgba(48, 48, 48, 0.5);
-    width: 90vw;
+    width: 90%;
     height: 70vh;
     justify-self: center;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     place-items: center;
+    padding-top: 10px;
 }
 
 .quote{
@@ -93,17 +136,18 @@ button:hover{
     margin: 0;
     color: rgb(255, 243, 240);
     background-color: rgba(48, 48, 48, 0.5);
-    width: 90vw;
-    height: 70vh;
+    width: 90%;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.582);
     display: grid;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 1fr 7fr;
     align-items: center;
+    padding: 40px;
+    padding-top: 10px;
 }
 
-h1{
-    text-align: center;
-    text-shadow: 4px 4px 4px rgb(0, 0, 0);
+.about h1{
+    text-align: center;   
 }
 
 
@@ -115,11 +159,47 @@ h1{
 }
 
 .card{
-    width: 24vw;
-    height: 50vh;
+    flex-grow: 0.5;
+    height: 480px;
     border-radius: 8px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.582);
     text-align: center;
     padding: 20px;
+}
+
+.projects{
+    margin: 0;
+    width: 90%;
+    color: rgb(255, 243, 240);
+    background-color: rgba(48, 48, 48, 0.5);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    display: grid;
+    gap: 20px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    place-items: center;
+}
+
+.projects .container{
+    margin-top: 10px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.582);
+    width: 100%; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    padding-left: 40px;
+}
+
+.projects img{
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    max-height: 400px;
+    max-width: 500px;
+    width: 90%;
+    height: 330px;
+}
+
+.projects a{
+    width: 90%;
 }
