@@ -39,6 +39,7 @@ body{
     place-items: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     place-items: center;
+    margin-bottom: 100px;
 }
 
 main{
@@ -101,6 +102,7 @@ p{
     gap: 10px;
     justify-content: left;
     padding-left: 100px;
+    margin-top: 40px;
 }
 
 .quote .container{
@@ -189,6 +191,7 @@ button:hover{
     grid-template-columns: 1fr 1fr;
     place-items: center;
     padding-left: 40px;
+
 }
 
 .projects img{
@@ -202,4 +205,144 @@ button:hover{
 
 .projects a{
     width: 90%;
+}
+
+.contact{
+    margin: 0;
+    width: 90%;
+    color: rgb(255, 243, 240);
+    background-color: rgba(48, 48, 48, 0.5);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    display: grid;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    place-items: center;
+}
+
+form{
+    display: grid;
+    place-items: center;
+    gap: 28px;
+}
+
+form input{
+    border-radius: 8px;
+}
+
+#message{
+    border-radius: 8px;
+    color: aliceblue;
+    max-width: 300px;
+}
+
+#email{
+    width: 300px;
+    height: 40px;
+    color: aliceblue;
+}
+
+#submit{
+    width: 50%;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+    border: none;
+    background-color: rgb(95, 93, 93);
+}
+
+#submit:hover{
+   background-color: rgb(46, 45, 45);
+   color: aliceblue;
+}
+
+.links{
+    display: flex;
+}
+
+.links img{
+    height: 28px;
+}
+
+a{
+    color: aliceblue;
+}
+
+
+@media (max-width: 950px) {
+
+    .hero img{
+        height: 48vh;
+        margin-bottom: 40px;
+    }
+
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .card{
+        height: auto;
+        padding: 40px;
+    }
+
+
+    .projects .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+        place-items: center;
+        width: 700px;
+        height: auto;
+        padding: 10px;
+    }
+
+    h1{
+        text-align: center;
+
+    }
+
+    .projects p{
+        text-align: center;
+    }
+
+    .projects a {
+        display: grid;
+        place-items: center;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .hero{
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0;
+        margin: 0;
+    }
+
+    .quote{
+        height: 100%;
+        display: grid;
+        grid-template-rows: 1fr 2fr;
+        gap: 10px;
+        justify-content: left;
+        margin-top: 40px;   
+        padding: 20px;
+    }
+
+    /*    text-shadow: 4px 4px 2px rgb(0, 0, 0);
+    margin: 0;
+    color: rgb(255, 243, 240);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    background-color: rgba(48, 48, 48, 0.5);
+    width: 90%;
+    height: 70vh;
+    justify-self: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    place-items: center;
+    padding-top: 10px;*/
+
 }
