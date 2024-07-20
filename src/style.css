@@ -258,6 +258,13 @@ a {
     color: aliceblue;
 }
 
+
+.dropdown{
+    display: none;
+}
+
+
+
 @media (max-width: 950px) {
     .hero img {
         height: 48vh;
@@ -372,9 +379,74 @@ a {
     .contact{
         width: 85vw;
     }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(48, 48, 48, 0.562);
+        position: static;
+    }
+
+    nav a {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+
+    nav.show {
+        display: flex;
+    }
+
+    .dropdown{
+        display: inline-block;
+        margin-right: 40px;
+        margin-top: 8px;
+        align-self: center;
+    }
+    .dropdown button{
+        padding: 10px 15px;
+        cursor: pointer;
+        display: flex;
+        background-color: rgba(245, 222, 179, 0);
+        display: grid;
+        place-items: center;
+        height: 100%;
+    }
+
+    .dropdown img{
+        height: 28px;
+        margin-bottom: 8px;
+    }
+
+    .dropdown a{
+        display: block;
+        color: aliceblue;
+        text-decoration: none;
+        padding: 10px 15px;
+
+    }
+    .dropdown .content{
+        display: none;
+        width: 120px;
+        border-radius: 8px;
+        position: absolute;
+        background-color: hsla(0, 0%, 16%, 0.589);
+        min-width: 100px;
+        box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+    }
+    .dropdown:hover .content{
+        display: block;
+    }
+    
+    .dropdown a:hover{
+        background-color: hsla(0, 1%, 14%, 0.637);
+    }
+}
     
 
-}
 
 @media (max-width: 550px) {
     .projects .container {
