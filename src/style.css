@@ -30,6 +30,7 @@ p, h1, h2, h3, h4, h5, h6 {
 html{
     display: grid;
     place-items: center;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -119,10 +120,10 @@ button {
     border-radius: 8px;
     border: none;
     background-color: rgb(157, 160, 161);
-    transition: all 0.3s ease;
 }
 
 button:hover {
+    transition: all 0.3s ease;
     background-color: rgb(189, 196, 196);
     transform: scale(1.1);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.247);
@@ -263,7 +264,15 @@ a {
     display: none;
 }
 
+button:active{
+    transition: all 0.01s ease;
+    border: 4px solid white;
+}
 
+#submit:active{
+    transition: all 0.01s ease;
+    border: 4px solid white;
+}
 
 @media (max-width: 950px) {
     .hero img {
