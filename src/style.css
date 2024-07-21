@@ -197,7 +197,9 @@ button:hover {
 }
 
 .projects a {
-    width: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .contact {
@@ -216,6 +218,7 @@ form {
     display: grid;
     place-items: center;
     gap: 28px;
+    width: 100%;
 }
 
 form input {
@@ -226,16 +229,19 @@ form input {
     border-radius: 8px;
     color: aliceblue;
     max-width: 300px;
+    width: 85%;
 }
 
 #email {
     width: 300px;
+    max-width: 85%;
     height: 40px;
     color: aliceblue;
 }
 
 #submit {
     width: 50%;
+    max-width: 300px;
     margin-bottom: 10px;
     transition: all 0.3s ease;
     border: none;
@@ -249,10 +255,12 @@ form input {
 
 .links {
     display: flex;
+    margin-top: 10px;
 }
 
 .links img {
     height: 28px;
+    margin-right: 5px;
 }
 
 a {
